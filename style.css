@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 200px;
+    border-radius: 10px;
+}
+.tuhoc{
+    width: 100%;
+}
+.nganh{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 100px 0px;
+}
+.thieu {
+    background-color: rgb(206, 226, 214);
+}
+.items{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
+    align-content: center;
+    justify-content: center;
+}
+.logo p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    opacity: 0.4;
+    margin: 10px 0;
+}
+.dong .content,.items{
+    padding-left: 50px;
+}
+.thieu .content,.items{
+    padding-right: 50px;
+}
+.content{
+    padding: 0 0px;
+    justify-content: center;
+    align-content: center;
+    
+}
+.content p{
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-top: 24px;
+}
+.content h2{
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-size: 30px;
+    border-bottom: 8px solid rgba(59, 52, 51, 0.493);
+    padding-bottom: 8px;
+}
+@media screen and (max-width: 1450px){
+    .items{
+        display: flex;
+        flex-flow:row wrap;
+    }
+}
+
