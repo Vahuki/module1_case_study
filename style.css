@@ -7,6 +7,15 @@ img{
     width: 200px;
     border-radius: 10px;
 }
+
+.header {
+    background-color: #fff;
+}
+
+.header h1 {
+    color: #333;
+}
+
 .tuhoc{
     width: 100%;
 }
