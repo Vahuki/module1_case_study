@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-.img{
+.tuhoc>.img{
     width: 200px;
     border-radius: 10px;
 }
@@ -48,10 +48,8 @@
     padding-right: 100px;
 }
 .content{
-    padding: 0 0px;
     justify-content: center;
     align-content: center;
-    
 }
 .content p{
     text-align: justify;
@@ -76,7 +74,7 @@
     height: 10px;
     background: linear-gradient(to right,#d933fe, #3751f6);
 }
-@media screen and (max-width: 1450px){
+@media screen and (max-width: 1600px){
     .items{
         display: flex;
         flex-flow:row wrap;
