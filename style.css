@@ -16,7 +16,7 @@
     width: 100%;
 }
 .tuhoc img{
-    width: 200px;
+    width: 250px;
     height: auto;
     border-radius: 5px;
 }
@@ -31,7 +31,7 @@
 .items{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 50px;
+    gap: 25px;
     align-content: center;
     justify-content: center;
 }
@@ -43,9 +43,15 @@
     margin: 10px 0;
 }
 .dong .content,.items{
-    padding-left: 100px;
+    padding-left: 10px;
 }
 .thieu .content,.items{
+    padding-right: 10px;
+}
+.dong {
+    padding-left: 100px;
+}
+.thieu{
     padding-right: 100px;
 }
 .content{
