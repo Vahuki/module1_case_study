@@ -65,8 +65,16 @@
     line-height: 1.2;
     text-transform: uppercase;
     font-size: 30px;
-    border-bottom: 8px solid rgba(59, 52, 51, 0.493);
-    padding-bottom: 8px;
+    position: relative;
+}
+.content h2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -17px;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right,#d933fe, #3751f6);
 }
 @media screen and (max-width: 1450px){
     .items{
