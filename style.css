@@ -146,6 +146,166 @@ img{
     margin-top: 2rem;
 }
 
+.tu-lieu {
+    background-color: rgb(206 226 214);
+    color: blue;
+    font-size: 20px;
+    height: 400px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.grid-container-tulieu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-content: center;
+    column-gap: 15px;
+}
+.grid-item-tulieu {
+    position: relative;
+   
+}
+.grid-container-tulieu img {
+    display: block;
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    }
+   
+    .grid-item-tulieu::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(26, 24, 24, 0),    /* điểm đầu: trong suốt */
+        rgba(26, 24, 24, 0.4)  /* điểm cuối: xám mờ 40% */
+    );
+    border-radius: 15px;
+    pointer-events: none; /* Cho phép các sự kiện hover tác dụng lên phần tử bên dưới */
+    z-index: 1;
+    }
+.grid-item-tulieu a:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+.tu-lieu .grid-container-tulieu .grid-item-tulieu .text-overlay1 {
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    bottom:15px; 
+    left:0;
+    right:0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    z-index: 5;
+}
+@media screen and (max-width: 1000px) { 
+    .tu-lieu {
+        font-size: 16px;
+        height: auto;
+        display: block;
+        text-align: center; 
+        margin-bottom: 10px;
+      }
+    .tu-lieu p {
+        margin: 0 0 10px; 
+        font-weight: bold; 
+      }
+    .grid-container-tulieu {
+    margin-bottom: 10px;
+    row-gap: 10px;
+    }
+}
+.an-cat {
+    height: 500px;
+    }
+    .an-cat {
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-content: center;
+        align-content: center;
+        }
+    .an-cat img {
+        margin-left: 20px;
+        width:400px;
+        height: auto;
+        display: block;
+        border-radius: 15px;
+    }
+    .an-cat a:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    .an-cat-content {
+        padding: 0 50px;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: justify;
+        align-content: center;
+        justify-content: center;
+    }
+    .an-cat-content h2 {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    .an-cat-content h2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -17px;
+        width: 10rem;
+        height: 5px;
+        background: linear-gradient(to right,#5da7fc, #6277ff);
+    }
+    /* .an-cat .an-cat-content hr {
+        border: 0;
+        height: 5px;
+        background-color: black;
+        width: 14rem;
+        padding: 0 50px;
+        margin: 10px;
+    } */
+    /* @media screen and (max-width: 1450px){
+        .tu-lieu{
+            display: flex;
+            flex-flow:row wrap;
+        }
+    } */
+    @media screen and (max-width: 800px) {
+        .an-cat {
+            grid-template-columns: 1fr;  /* Chuyển sang 1 cột duy nhất */
+            height: auto;                /* Cho phép container tự điều chỉnh chiều cao */
+            padding: 20px;               /* Tùy chọn thêm khoảng cách */
+          }
+          
+          .an-cat img {
+            margin: 0 auto;              /* Canh giữa ảnh */
+            width: 50%;                  /* Sử dụng phần trăm để ảnh co giãn */
+            height: auto;                /* Giữ tỷ lệ hình ảnh */
+          }
+          
+          .an-cat-content {
+            width: 90%;                  /* Điều chỉnh width theo phần trăm */
+            padding: 20px;               /* Giảm padding cho phù hợp với màn hình nhỏ */
+            margin: 0 auto;              /* Canh giữa nội dung */
+          }
+        }
+     
+
+=======
+
 @media screen and (max-width: 768px) {
     .tien_than .grid-container {
         grid-template-columns: repeat(2, 1fr);
@@ -177,3 +337,4 @@ img{
 .footer>li {
     margin-bottom: 5px;
 }
+
