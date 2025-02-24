@@ -135,7 +135,7 @@
 }
 
 .tien_than > h2{
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     font-weight: 500;
     color: rgb(99, 40, 222);
     text-align: center;
@@ -145,6 +145,13 @@
 .d-grid > button{
     margin-top: 2rem;
 }
+
+@media screen and (max-width: 768px) {
+    .tien_than .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Phần của Nhân đến đây là hết */
 
 .tu-lieu {
     background-color: rgb(206 226 214);
@@ -302,16 +309,7 @@
             margin: 0 auto;              /* Canh giữa nội dung */
           }
         }
-     
 
-
-
-@media screen and (max-width: 768px) {
-    .tien_than .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-/* Hết phần của Nhân */
 /*Tran Duc Lap*/
 .footer {
     font-family: Arial, sans-serif;
