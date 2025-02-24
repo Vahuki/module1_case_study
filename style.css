@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-img{
+.img{
     width: 200px;
     border-radius: 10px;
 }
@@ -346,6 +346,11 @@ img{
 }
 /*viet anh*/
 
+/* 
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+} */
 
 .navbar {
     display: flex;
@@ -356,6 +361,7 @@ img{
     color: #005c01;
 }
 
+
 .logo {
     font-size: 28px;
     font-weight: bold;
@@ -365,6 +371,7 @@ img{
     list-style: none;
     display: flex;
     align-items: center;
+    margin: 0px;
 }
 
 
@@ -409,7 +416,7 @@ img{
     left: 0;
     padding: 0px 0px 0px 0px;
     background-color: white;
-    min-width: 200px;
+    min-width: 208px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 10;
     transition: all 0.3s;
@@ -444,6 +451,7 @@ img{
         position: absolute;
         top: 60px;
         left: 0;
+        justify-content: space-around;
         background-color: #333;
         width: 100%;
         text-align: center;
