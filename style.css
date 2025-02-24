@@ -3,10 +3,6 @@
     margin: 0;
     padding: 0;
 }
-/* .tuhoc img{
-    width: 200px;
-    border-radius: 10px;
-} */
 
 .header {
     background-color: #fff;
@@ -74,12 +70,19 @@
     height: 10px;
     background: linear-gradient(to right,#d933fe, #3751f6);
 }
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1450px){
     .items{
         display: flex;
         flex-flow:row wrap;
     }
 }
+@media screen and (max-width: 1270px){
+    .items{
+        display: flex;
+        flex-flow:column;
+    }
+}
+
 
 /* Phần này là của Nhân */
 .tien_than{
