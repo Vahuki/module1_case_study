@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDPT An Cát</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .section {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1>GDPT An Cát</h1>
+<p>Địa chỉ: Thượng An, Phong An, Phong Điền, Thừa Thiên Huế</p>
+<p>Mọi thắc mắc xin liên hệ:</p>
+<p>
+    📞 0962351757<br>
+    ✉️ phamnguyenhai0123@gmail.com<br>
+    🌐 <a href="https://www.facebook.com/gdptancat.com.vn" target="_blank">Trang facebook của gia đình</a>
+</p>
+
+<div class="container">
+    <div class="section">
+        <h2>TU HỌC NGÀNH ĐỒNG</h2>
+        <ul>
+            <li>Mở mắt</li>
+            <li>Chân cứng</li>
+            <li>Cánh mềm</li>
+            <li>Tung bay</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>TU HỌC NGÀNH THIẾU</h2>
+        <ul>
+            <li>Hướng Thiện</li>
+            <li>Sơ Thiện</li>
+            <li>Trung Thiện</li>
+            <li>Chánh Thiện</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>TRẠI HUẤN LUYỆN</h2>
+        <ul>
+            <li>Tuyết Sơn</li>
+            <li>Anoma - Ni Liên</li>
+            <li>Sơ Cấp Lộc Uyển</li>
+            <li>A Dục</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>HOẠT ĐỘNG THANH NIÊN</h2>
+        <ul>
+            <li>Tổng hợp gút dây</li>
+            <li>Cách giải mật thư cơ bản</li>
+            <li>Dấu đi đường</li>
+            <li>Truyền tin</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>TƯ LIỆU THAM KHẢO</h2>
+        <ul>
+            <li>Một số đề thi</li>
+            <li>Câu chuyện tiền thân</li>
+            <li>Một số trò chơi</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>THAM GIA GIẢI MẬT THƯ</h2>
+    </div>
+</div>
+</body>
+</html>
