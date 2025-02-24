@@ -145,6 +145,12 @@ img{
 .d-grid > button{
     margin-top: 2rem;
 }
+
+@media screen and (max-width: 768px) {
+    .tien_than .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 /* Phần của Nhân đến đây là hết */
 
 .tu-lieu {
@@ -303,16 +309,7 @@ img{
             margin: 0 auto;              /* Canh giữa nội dung */
           }
         }
-     
 
-
-
-@media screen and (max-width: 768px) {
-    .tien_than .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-/* Hết phần của Nhân */
 /*Tran Duc Lap*/
 .footer {
     font-family: Arial, sans-serif;
