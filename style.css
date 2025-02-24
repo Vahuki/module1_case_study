@@ -135,7 +135,7 @@ img{
 }
 
 .tien_than > h2{
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     font-weight: 500;
     color: rgb(99, 40, 222);
     text-align: center;
@@ -145,6 +145,7 @@ img{
 .d-grid > button{
     margin-top: 2rem;
 }
+/* Phần của Nhân đến đây là hết */
 
 .tu-lieu {
     background-color: rgb(206 226 214);
