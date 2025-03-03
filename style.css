@@ -23,7 +23,7 @@
 .nganh{
     display: grid;
     grid-template-columns: auto auto;
-    padding: 100px 0px;
+    padding: 100px 0;
 }
 .thieu {
     background-color: rgb(206, 226, 214);
@@ -98,10 +98,10 @@
         border-radius: 5px;
     }
     .dong {
-        padding-left: 0px;
+        padding-left: 0;
     }
     .thieu{
-        padding-right: 0px;
+        padding-right: 0;
     }
     .logo p{
         text-align: center;
@@ -113,7 +113,7 @@
     .nganh{
         display: grid;
         grid-template-columns: auto auto;
-        padding: 10px 0px;
+        padding: 10px 0;
     }
     
 }
@@ -171,11 +171,16 @@
 .tien_than .grid-container .grid-item:hover .overlay {
     opacity: 1; /* Tạo lớp chồng lên ảnh */
 }
-
-.grid-item img{
+.grid-item a{
+    display: block;
+    width: 100%;
+}
+.grid-item a img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: bottom;
+    display: block;
 }
 
 .tien_than > h2{
@@ -303,7 +308,6 @@
         cursor: pointer;
     }
     .an-cat-content {
-        padding: 0 50px;
         width: 100%;
         max-width: 800px;
         margin: 0 auto;
@@ -369,10 +373,10 @@
     justify-content: space-between;
     align-items: flex-start; /* Làm cho .contact và .container cùng nằm trên cùng 1 line */
     font-family: Arial, sans-serif;
-    margin: 40px 10px 20px;
+    margin: 40px 0 20px 0;
 }
 .contact{
-    font-size: 10px;
+    font-size: 13px;
     position: relative;
     left: 2rem;
     padding-left: 1rem;
@@ -405,6 +409,7 @@
 }
 .footer h4 {
     font-size: 18px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 .footer ul {
@@ -435,7 +440,7 @@
     list-style: none;
     display: flex;
     align-items: center;
-    margin: 0px;
+    margin: 0;
 }
 
 
@@ -478,10 +483,10 @@
     position: absolute;
     top: 100%;
     left: 0;
-    padding: 0px 0px 0px 0px;
+    padding: 0;
     background-color: white;
     min-width: 208px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 10;
     transition: all 0.3s;
 }
@@ -489,8 +494,8 @@
 
 .submenu li {
     display: block;
-    margin: 0px;
-    padding: 16px 0px;
+    margin: 0;
+    padding: 16px 0;
 }
 
 
@@ -498,7 +503,7 @@
     color: #555555;
     font-size: 20px;
     display: block;
-    padding: 0px 12px;
+    padding: 0 12px;
     text-decoration: none;
 }
 
