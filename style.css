@@ -350,7 +350,7 @@
           .an-cat-img {
             margin: 0 auto;              /* Canh giữa ảnh */
             width: 50%;
-            justify-content: content;
+            justify-content: center;
             align-content: center;
             /* height: auto;                Giữ tỷ lệ hình ảnh */
             /* Sử dụng phần trăm để ảnh co giãn */
