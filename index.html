@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GĐPT An Cát</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./logo/apple-touch-icon.png">
 </head>
@@ -56,13 +60,92 @@
         <li><a href="#">GÓC VƯỜN LAM</a></li>
         <li><a href="#">GIẢI MẬT THƯ</a></li>
     </ul>
-    <div class="menu-icon">☰</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">GĐPT An Cát</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: white;">TRANG CHỦ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        TU HỌC
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ngành Đồng</a></li>
+                        <li><a class="dropdown-item" href="#">Ngành Thiếu</a></li>
+                        <li><a class="dropdown-item" href="#">Ngành Thanh</a></li>
+                        <li><a class="dropdown-item" href="#">Ngành Trưởng</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        HUẤN LUYỆN
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Trại Tuyết Sơn</a></li>
+                        <li><a class="dropdown-item" href="#">Trại Anoma - Ni Liên</a></li>
+                        <li><a class="dropdown-item" href="#">Trại Tu Đạt Đa - Tỳ Xá Khư</a></li>
+                        <li><a class="dropdown-item" href="#">Trại Lộc Uyển</a></li>
+                        <li><a class="dropdown-item" href="#">Trại A Dục</a></li>
+                        <li><a class="dropdown-item" href="#">Trại Huyền Trang</a></li>
+                        <li><a class="dropdown-item" href="#">Trại Vạn Hạnh</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        HOẠT ĐỘNG THANH NIÊN
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Gút dây</a></li>
+                        <li><a class="dropdown-item" href="#">Mật thư</a></li>
+                        <li><a class="dropdown-item" href="#">Dấu đi đường</a></li>
+                        <li><a class="dropdown-item" href="#">Truyền tin</a></li>
+                        <li><a class="dropdown-item" href="#">Phương hướng</a></li>
+                        <li><a class="dropdown-item" href="#">Ước đạt</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        TƯ LIỆU THAM KHẢO
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Một số đề thi</a></li>
+                        <li><a class="dropdown-item" href="#">Câu chuyện tiền thân</a></li>
+                        <li><a class="dropdown-item" href="#">File</a></li>
+                        <li><a class="dropdown-item" href="#">Trò chơi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">GÓC VƯỜN LAM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">GIẢI MẬT THƯ</a>
+                </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-light" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
     <div class="login" style="color: #337ab7">Đăng nhập</div>
 </nav>
 
-    <section class="tu-lieu">
-        <p>TƯ LIỆU THAM KHẢO</p>
-        <div class="grid-container-tulieu">
+<section class="tu-lieu">
+    <p>TƯ LIỆU THAM KHẢO</p>
+    <div class="grid-container-tulieu">
         <div class="grid-item-tulieu">
             <a href="#tulieu1"><img src="./images/img_tulieu11.jpg" alt="tulieu1"></a>
             <div class="text-overlay1">Một Số Đề Thi Vượt Bậc</div>
@@ -75,122 +158,127 @@
             <a href="#tulieu3"><img src="./images/img_tulieu33.jpg" alt="tulieu3"></a>
             <div class="text-overlay1">Một Số Trò Chơi Sinh Hoạt</div>
         </div>
+    </div>
+</section>
+<section class="an-cat">
+    <div class="an-cat-img">
+        <img src="./images/img_GDPT An Cat.jpg" style="width: 100%;" alt="ancat">
+    </div>
+    <div class="an-cat-content">
+        <h2>GĐPT An Cát</h2>
+        <!-- <hr> -->
+        <p>GĐPT An Cát hiện có 20 anh chị huynh trưởng các cấp cùng với hơn 60 đoàn sinh các ngành đang sinh hoạt tại
+            đây. Với mong muốn xây dựng một tổ chức vừa giáo dục vừa vui chơi lành mạnh cho thế hệ thanh thiếu đồng
+            niên, huynh trưởng và đoàn sinh An Cát luôn luôn nổ lực và cố gắng, trau dồi thêm kiến thức lẫn kĩ năng để
+            hướng dẫn các em có thể phát triển bản thân để giúp đời, giúp đạo. Bên cạnh đó, cùng với sự dẫn dắt tận tình
+            của Sư trụ trì cũng như nhiệt huyết của ban huynh trưởng, đoàn sinh đã và đang cố gắng xây dựng phát triển
+            chùa Hội Thượng - GĐPT AN CÁT ngày càng vững mạnh.
+        </p>
+    </div>
+</section>
+<div class="tien_than">
+    <h2>CÁC CÂU CHUYỆN TIỀN THÂN</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="#"><img src="images/1.jpg" alt="1"></a>
+            <div class="overlay">LÒNG HIẾU CỦA CHIM OANH VŨ</div>
         </div>
-    </section>
-    <section class="an-cat">
-        <div class="an-cat-img">
-            <img src="./images/img_GDPT An Cat.jpg" style="width: 100%;" alt="ancat">
+        <div class="grid-item">
+            <a href="#"><img src="images/2.jpg" alt="2"></a>
+            <div class="overlay">CỬ CHỈ NHÂN TỪ CỦA CHIM OANH VŨ</div>
         </div>
-        <div class="an-cat-content">
-            <h2>GĐPT An Cát</h2>
-            <!-- <hr> -->
-            <p>GĐPT An Cát hiện có 20 anh chị huynh trưởng các cấp cùng với hơn 60 đoàn sinh các ngành đang sinh hoạt tại đây. Với mong muốn xây dựng một tổ chức vừa giáo dục vừa vui chơi lành mạnh cho thế hệ thanh thiếu đồng niên, huynh trưởng và đoàn sinh An Cát luôn luôn nổ lực và cố gắng, trau dồi thêm kiến thức lẫn kĩ năng để hướng dẫn các em có thể phát triển bản thân để giúp đời, giúp đạo. Bên cạnh đó, cùng với sự dẫn dắt tận tình của Sư trụ trì cũng như nhiệt huyết của ban huynh trưởng, đoàn sinh đã và đang cố gắng xây dựng phát triển chùa Hội Thượng - GĐPT AN CÁT ngày càng vững mạnh.
-            </p>
-            </div>
-    </section>
-    <div class="tien_than">
-        <h2>CÁC CÂU CHUYỆN TIỀN THÂN</h2>
-        <div class="grid-container">
-            <div class="grid-item">
-                <a href="#"><img src="images/1.jpg" alt="1"></a>
-                <div class="overlay">LÒNG HIẾU CỦA CHIM OANH VŨ</div>
-            </div>
-            <div class="grid-item">
-                <a href="#"><img src="images/2.jpg" alt="2"></a>
-                <div class="overlay">CỬ CHỈ NHÂN TỪ CỦA CHIM OANH VŨ</div>
-            </div>
-            <div class="grid-item">
-                <a href="#"><img src="images/3.jpg" alt="3"></a>
-                <div class="overlay">CHIẾC CẦU MUÔN THUỞ</div>
-            </div>
-            <div class="grid-item">
-                <a href="#"><img src="images/4.jpg" alt="4"></a>
-                <div class="overlay">CON VOI HIẾU NGHĨA</div>
-            </div>
-            <div class="grid-item">
-                <a href="#"><img src="images/5.jpg" alt="5"></a>
-                <div class="overlay">THẦY TỲ KHEO VÀ CON NGỖNG</div>
-            </div>
-            <div class="grid-item">
-                <a href="#"><img src="images/6.jpg" alt="6"></a>
-                <div class="overlay">CẶP MẮT THÁI TỬ CÂU NA LA</div>
-            </div>
-            <div class="grid-item">
-                <a href="#"><img src="images/7.jpg" alt="7"></a>
-                <div class="overlay">NGƯỜI ĐẠO SĨ CHÍ HIẾU</div>
-            </div>
-            <div class="grid-item">
-                <a href="#"><img src="images/8.jpg" alt="8" style="position: relative; bottom: 7rem;"></a>
-                <div class="overlay">CON KHỈ NHÂN TỪ</div>
-            </div>
+        <div class="grid-item">
+            <a href="#"><img src="images/3.jpg" alt="3"></a>
+            <div class="overlay">CHIẾC CẦU MUÔN THUỞ</div>
         </div>
-        <div class="d-grid">
-            <button type="button" class="btn btn-primary mx-auto">XEM THÊM</button>
+        <div class="grid-item">
+            <a href="#"><img src="images/4.jpg" alt="4"></a>
+            <div class="overlay">CON VOI HIẾU NGHĨA</div>
+        </div>
+        <div class="grid-item">
+            <a href="#"><img src="images/5.jpg" alt="5"></a>
+            <div class="overlay">THẦY TỲ KHEO VÀ CON NGỖNG</div>
+        </div>
+        <div class="grid-item">
+            <a href="#"><img src="images/6.jpg" alt="6"></a>
+            <div class="overlay">CẶP MẮT THÁI TỬ CÂU NA LA</div>
+        </div>
+        <div class="grid-item">
+            <a href="#"><img src="images/7.jpg" alt="7"></a>
+            <div class="overlay">NGƯỜI ĐẠO SĨ CHÍ HIẾU</div>
+        </div>
+        <div class="grid-item">
+            <a href="#"><img src="images/8.jpg" alt="8" style="position: relative; bottom: 7rem;"></a>
+            <div class="overlay">CON KHỈ NHÂN TỪ</div>
         </div>
     </div>
-    <section class="tuhoc">
-        <section class="nganh dong">
-            <div class="content">
-                <h2>Tìm hiểu các bậc học ngành Đồng</h2>
-                <p>"Theo chương trình tu học được tu chỉnh tại Hội nghị Đại biểu Huynh Trưởng GĐPT Việt Nam từ ngày 11
-                    đến 14/08/2006 tại Văn phòng 2 Trung Ương GHPGVN, Thiền viện Quảng Đức và Tổ đình Vĩnh Nghiêm."</p>
+    <div class="d-grid">
+        <button type="button" class="btn btn-primary mx-auto">XEM THÊM</button>
+    </div>
+</div>
+<section class="tuhoc">
+    <section class="nganh dong">
+        <div class="content">
+            <h2>Tìm hiểu các bậc học ngành Đồng</h2>
+            <p>"Theo chương trình tu học được tu chỉnh tại Hội nghị Đại biểu Huynh Trưởng GĐPT Việt Nam từ ngày 11
+                đến 14/08/2006 tại Văn phòng 2 Trung Ương GHPGVN, Thiền viện Quảng Đức và Tổ đình Vĩnh Nghiêm."</p>
+        </div>
+        <div class="items">
+            <div class="logo">
+                <a href="#"><img src="./logo/momat.0564990f05a1d53bf3af.jpg" alt="mở mắt"></a>
+                <p>Mở Mắt</p>
             </div>
-            <div class="items">
-                <div class="logo">
-                    <a href="#"><img src="./logo/momat.0564990f05a1d53bf3af.jpg" alt="mở mắt"></a>
-                    <p>Mở Mắt</p>
-                </div>
-                <div class="logo">
-                    <a href="#"><img src="./logo/chancung.088625e0a53ae9c3b176.jpg" alt="chân cứng"></a>
-                    <p>Chân Cứng</p>
-                </div>
-                <div class="logo">
-                    <a href="#"><img src="./logo/canhmem.b98175626c92a1c124fa.jpg" alt="cánh mềm"></a>
-                    <p>Cánh Mềm</p>
-                </div>
-                <div class="logo">
-                    <a href="#"><img src="./logo/tungbay.73d06a9e955060618e59.jpg" alt="tung baybay"></a>
-                    <p>Tung Bay</p>
-                </div>
+            <div class="logo">
+                <a href="#"><img src="./logo/chancung.088625e0a53ae9c3b176.jpg" alt="chân cứng"></a>
+                <p>Chân Cứng</p>
             </div>
-        </section>
-        <section class="nganh thieu">
-
-            <div class="items">
-                <div class="logo">
-                    <a href="#"><img src="./logo/huongthien.5ca021d4b649208e9f55.jpg" alt="mở mắt"></a>
-                    <p>Hướng Thiện</p>
-                </div>
-                <div class="logo">
-                    <a href="#"><img src="./logo/sothien.46691e8804c7458ab668.jpg" alt="chân cứng"></a>
-                    <p>Sơ Thiện</p>
-                </div>
-                <div class="logo">
-                    <a href="#"><img src="./logo/trungthien.ba83b736ee6cae669381.jpg" alt="cánh mềm"></a>
-                    <p>Trung Thiện</p>
-                </div>
-                <div class="logo">
-                    <a href="#"><img src="./logo/chanhthien.7cc215b7e45b80b56760.jpg" alt="tung baybay"></a>
-                    <p>Chánh Thiện</p>
-                </div>
+            <div class="logo">
+                <a href="#"><img src="./logo/canhmem.b98175626c92a1c124fa.jpg" alt="cánh mềm"></a>
+                <p>Cánh Mềm</p>
             </div>
-            <div class="content">
-                <h2>Tìm hiểu các bậc học ngành Thiếu</h2>
-                <p>"Theo chương trình tu học được tu chỉnh tại Hội nghị Đại biểu Huynh Trưởng GĐPT Việt Nam từ ngày 11
-                    đến 14/08/2006 tại Văn phòng 2 Trung Ương GHPGVN, Thiền viện Quảng Đức và Tổ đình Vĩnh Nghiêm."</p>
+            <div class="logo">
+                <a href="#"><img src="./logo/tungbay.73d06a9e955060618e59.jpg" alt="tung baybay"></a>
+                <p>Tung Bay</p>
             </div>
-        </section>
+        </div>
     </section>
-    <footer class="footer">
+    <section class="nganh thieu">
+
+        <div class="items">
+            <div class="logo">
+                <a href="#"><img src="./logo/huongthien.5ca021d4b649208e9f55.jpg" alt="mở mắt"></a>
+                <p>Hướng Thiện</p>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="./logo/sothien.46691e8804c7458ab668.jpg" alt="chân cứng"></a>
+                <p>Sơ Thiện</p>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="./logo/trungthien.ba83b736ee6cae669381.jpg" alt="cánh mềm"></a>
+                <p>Trung Thiện</p>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="./logo/chanhthien.7cc215b7e45b80b56760.jpg" alt="tung baybay"></a>
+                <p>Chánh Thiện</p>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Tìm hiểu các bậc học ngành Thiếu</h2>
+            <p>"Theo chương trình tu học được tu chỉnh tại Hội nghị Đại biểu Huynh Trưởng GĐPT Việt Nam từ ngày 11
+                đến 14/08/2006 tại Văn phòng 2 Trung Ương GHPGVN, Thiền viện Quảng Đức và Tổ đình Vĩnh Nghiêm."</p>
+        </div>
+    </section>
+</section>
+<footer class="footer">
     <div class="contact">
         <h3>GDPT An Cát</h3>
-    <p>Địa chỉ: Thượng An, Phong An, Phong Điền, Thừa Thiên Huế</p>
-    <p><strong>Mọi thắc mắc xin liên hệ:</strong></p>
-    <p>
-        📞 0962351757<br>
-        ✉️ phamnguyenhai0123@gmail.com<br>
-        🌐 <a href="https://www.facebook.com/gdptancat.com.vn" target="_blank">Trang facebook của gia đình</a>
-    </p>
+        <p>Địa chỉ: Thượng An, Phong An, Phong Điền, Thừa Thiên Huế</p>
+        <p><strong>Mọi thắc mắc xin liên hệ:</strong></p>
+        <p>
+            📞 0962351757<br>
+            ✉️ phamnguyenhai0123@gmail.com<br>
+            🌐 <a href="https://www.facebook.com/gdptancat.com.vn" target="_blank">Trang facebook của gia đình</a>
+        </p>
     </div>
     <div class="container">
         <div class="section1">
@@ -241,7 +329,7 @@
             <h4>THAM GIA GIẢI MẬT THƯ</h4>
         </div>
     </div>
-    </footer>
+</footer>
 </body>
 
 </html>
