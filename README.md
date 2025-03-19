@@ -2,7 +2,7 @@
 
 This is a website containing information about a religious organization.  
 
-# 🖼 Project Screenshot: https://byvn.net/z0Iu 
+## 🖼 Project Screenshot: https://byvn.net/z0Iu 
 
 ## 🌟 Features  
 - 🏠 Homepage with structured layout  
