@@ -475,7 +475,7 @@
     display: flex;
     align-items: center;
     background-color: white;
-    padding: 1rem 64px;
+    padding: 0.5rem 64px;
     color: #005c01;
     position: fixed;
     z-index: 20;
