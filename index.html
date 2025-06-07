@@ -276,7 +276,7 @@
     let backToTopButton = document.getElementById("backToTop");
 
     // Khi người dùng cuộn xuống 200px, hiện nút
-    window.onscroll = function() {
+    window.onscroll = function () {
         if (document.documentElement.scrollTop > 200) {
             backToTopButton.style.display = "flex";
         } else {
@@ -285,8 +285,8 @@
     };
 
     // Khi bấm nút, cuộn mượt lên đầu trang
-    backToTopButton.addEventListener("click", function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+    backToTopButton.addEventListener("click", function () {
+        window.scrollTo({top: 0, behavior: 'smooth'});
     });
 </script>
 <footer class="footer">
